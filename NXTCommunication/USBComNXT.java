@@ -86,6 +86,7 @@ public class USBCom {
 		dos = con.openDataOutputStream();
 		dis = con.openDataInputStream();
 		LCD.drawString("Connected", 0, 0);
+		isConnected = true;
 	}
 	
 	private synchronized void stopConnection(){
